@@ -5,7 +5,7 @@ class SplashTwo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: Color(0xffA18CE7),
       body: Center(
         child: Text(

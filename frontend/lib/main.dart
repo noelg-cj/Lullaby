@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:frontend/pages/Splash_screen_two.dart';
 import 'package:frontend/pages/splash_screen.dart';
 
 void main() {
@@ -19,7 +18,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const SplashTwo()
+      home: const SplashScreen()
     );
   }
 }
