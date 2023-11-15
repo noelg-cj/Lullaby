@@ -1,2 +1,2 @@
 # Lullaby
-The lullaby project 
+Lullaby is a meditation app
