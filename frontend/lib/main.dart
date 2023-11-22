@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:frontend/pages/Home.dart';
 import 'package:frontend/pages/splash_screen.dart';
+import 'package:frontend/pages/theory.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const SplashScreen()
+      home: const Theory()
     );
   }
 }
