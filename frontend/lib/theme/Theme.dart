@@ -13,9 +13,11 @@ ThemeData lightTheme = ThemeData(
   textTheme: TextTheme(
     bodyMedium: TextStyle(
       color: textColor,
-      fontSize: 16
+      fontSize: 14
     ),
     bodyLarge: TextStyle(
+      fontFamily: 'PlayfairDisplay',
+      fontWeight: FontWeight.w600,
       color: textColor,
       fontSize: 24
     )
