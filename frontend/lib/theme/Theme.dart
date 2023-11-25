@@ -1,9 +1,23 @@
 import 'package:flutter/material.dart';
 
+const textColor = Color(0xff534C7F);
+
 ThemeData lightTheme = ThemeData(
   brightness: Brightness.light,
   primaryColor: Color(0xffA18CE7),
+  colorScheme: ColorScheme.light(
+    primary: Color(0xff9747FF),
+    inversePrimary: textColor,
+    background: Color(0xffF2F1F8)
+  ),
   textTheme: TextTheme(
-    headlineLarge: TextStyle().copyWith(color: Color(0xff534C7F))
+    bodyMedium: TextStyle(
+      color: textColor,
+      fontSize: 16
+    ),
+    bodyLarge: TextStyle(
+      color: textColor,
+      fontSize: 24
+    )
   )
 );

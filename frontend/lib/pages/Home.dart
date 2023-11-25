@@ -7,6 +7,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Stack(
             children: [
@@ -34,6 +35,22 @@ class Home extends StatelessWidget {
                 ),
               )
             ],
+          ),
+          Container(
+            padding: EdgeInsets.all(16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Good Morning,',
+                  style: Theme.of(context).textTheme.bodyMedium
+                ),
+                Text(
+                  "Margaret",
+                  style: Theme.of(context).textTheme.bodyLarge,
+                )
+              ],
+            ),
           )
         ],
       )
