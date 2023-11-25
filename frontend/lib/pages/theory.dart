@@ -15,7 +15,7 @@ class Theory extends StatelessWidget {
               "Theory",
               style: TextStyle(
                 fontFamily: 'PlayfairDisplay',
-                fontWeight: FontWeight.w500,
+                fontWeight: FontWeight.w600,
                 fontSize: 28
               ),          
             ),
