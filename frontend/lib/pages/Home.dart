@@ -43,13 +43,42 @@ class Home extends StatelessWidget {
               children: [
                 Text(
                   'Good Morning,',
-                  style: Theme.of(context).textTheme.bodyMedium
+                  style: Theme.of(context).textTheme.bodySmall
                 ),
                 Text(
                   "Margaret",
                   style: Theme.of(context).textTheme.bodyLarge,
                 )
               ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+            child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: Theme.of(context).colorScheme.inversePrimary.withOpacity(0.35),
+                ),
+                borderRadius: BorderRadius.circular(6)
+              ),
+              child: Row(
+                children: [
+                  Text(
+                    "😊",
+                    style: TextStyle(
+                      fontSize: 24
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 15),
+                    child: Text(
+                      "How are you feeling today?",
+                      style: Theme.of(context).textTheme.bodyMedium
+                    ),
+                  )
+                ],
+              ),
             ),
           )
         ],
