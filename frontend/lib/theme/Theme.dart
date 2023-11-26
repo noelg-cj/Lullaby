@@ -4,18 +4,18 @@ const textColor = Color(0xff534C7F);
 
 ThemeData lightTheme = ThemeData(
   brightness: Brightness.light,
-  primaryColor: Color(0xffA18CE7),
-  colorScheme: ColorScheme.light(
+  primaryColor: const Color(0xffA18CE7),
+  colorScheme: const ColorScheme.light(
     primary: Color(0xff9747FF),
     inversePrimary: textColor,
     background: Color(0xffF2F1F8)
   ),
-  textTheme: TextTheme(
+  textTheme: const TextTheme(
     bodySmall: TextStyle(
       color: textColor,
       fontSize: 14
     ),
-    bodyMedium: TextStyle(
+    bodyMedium: const TextStyle(
       fontSize: 16,
       color: textColor
     ),
@@ -24,6 +24,12 @@ ThemeData lightTheme = ThemeData(
       fontWeight: FontWeight.w600,
       color: textColor,
       fontSize: 24
+    ),
+    displayMedium: TextStyle(
+      fontFamily: 'PlayfairDisplay',
+      fontWeight: FontWeight.w500,
+      color: Colors.black,
+      fontSize: 32
     )
   )
 );

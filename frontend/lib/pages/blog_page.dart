@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+/* 
+  TODO: Add "done by and date"
+ */
+
 class BlogWidget extends StatelessWidget {
   const BlogWidget({super.key});
 
@@ -13,12 +17,14 @@ class BlogWidget extends StatelessWidget {
               preferredSize: Size.fromHeight(30),
               child: Container(
                 width: MediaQuery.of(context).size.width,
+                height: 20,
                 decoration: BoxDecoration(
-                  color: Colors.blueAccent
+                  color: Theme.of(context).colorScheme.background,
+                  borderRadius: BorderRadius.only(topLeft: Radius.circular(10), topRight: Radius.circular(10))
                 ),
               )
             ),
-            backgroundColor: Theme.of(context).colorScheme.primary,
+            backgroundColor: Theme.of(context).colorScheme.background,
             elevation: 0,
             pinned: true,
             expandedHeight: 280,
@@ -35,32 +41,27 @@ class BlogWidget extends StatelessWidget {
                       fit: BoxFit.cover
                     ),
                   ),
-                  Positioned(
-                    bottom: -1,
-                    child: Container(
-                      height: 20,
-                      width: MediaQuery.of(context).size.width,
-                      decoration: BoxDecoration(
-                        color: Theme.of(context).colorScheme.background,
-                        borderRadius: BorderRadius.only(topLeft: Radius.circular(10), topRight: Radius.circular(10))
-                      ),
-                    ),
-                  )
                 ]
               ),
             ),
           ),
           SliverToBoxAdapter(
             child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 30),
               decoration: BoxDecoration(
-                color: Colors.amber,
-                borderRadius: BorderRadius.only(topLeft: Radius.circular(10), topRight: Radius.circular(10))
+                color: Theme.of(context).colorScheme.background,
               ),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Container(
-                    height: 500,
-                    width: MediaQuery.of(context).size.width
+                  Text(
+                    "Taking better care of yourself",
+                    style: Theme.of(context).textTheme.displayMedium
+                  ),
+                  SizedBox(height: 15),
+                  Text(
+                    "Taking better care of yourself is not a luxury; it's a necessity. In our fast-paced, often stressful lives, it's easy to put our well-being on the back burner. \n\nHowever, prioritizing self-care is essential for maintaining good physical and mental health.\n\nStart by carving out some time each day for activities that nourish your body and soul, whether it's through exercise, meditation, or indulging in a good book. Ensure you're getting enough sleep and eating a balanced diet. Don't forget to connect with loved ones and seek support when needed, as social connections can be a powerful source of comfort.Remember, self-care isn't selfish; it's a vital part of living a happy, healthy life.",
+                    style: Theme.of(context).textTheme.bodyMedium
                   )
                 ],
               )
