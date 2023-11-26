@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:frontend/pages/Home.dart';
+import 'package:frontend/pages/blog_page.dart';
 import 'package:frontend/pages/splash_screen.dart';
 import 'package:frontend/pages/theory.dart';
 import 'package:frontend/theme/theme.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: lightTheme,
       debugShowCheckedModeBanner: false,
-      home: const Home()
+      home: BlogWidget()
     );
   }
 }
