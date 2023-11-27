@@ -11,9 +11,13 @@ ThemeData lightTheme = ThemeData(
     background: Color(0xffF2F1F8)
   ),
   textTheme: const TextTheme(
+    headlineMedium: TextStyle(
+      color: textColor,
+      fontSize: 18
+    ),
     bodySmall: TextStyle(
       color: textColor,
-      fontSize: 14
+      fontSize: 14,
     ),
     bodyMedium: const TextStyle(
       fontSize: 16,

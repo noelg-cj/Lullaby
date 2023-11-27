@@ -53,7 +53,7 @@ class Home extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+            padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 5),
             child: Container(
               padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
               decoration: BoxDecoration(
@@ -76,9 +76,17 @@ class Home extends StatelessWidget {
                       "How are you feeling today?",
                       style: Theme.of(context).textTheme.bodyMedium
                     ),
-                  )
+                  ),
                 ],
               ),
+            ),
+          ),
+          const SizedBox(height: 15),
+          Padding(
+            padding: const EdgeInsets.only(left: 15),
+            child: Text(
+              "Recommended",
+              style: Theme.of(context).textTheme.headlineMedium
             ),
           )
         ],
