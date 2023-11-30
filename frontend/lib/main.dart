@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: lightTheme,
       debugShowCheckedModeBanner: false,
-      home: BlogWidget()
+      home: Home()
     );
   }
 }
