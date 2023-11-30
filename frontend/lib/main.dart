@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:frontend/pages/Home.dart';
+import 'package:frontend/pages/Splash_screen_two.dart';
 import 'package:frontend/pages/blog_page.dart';
 import 'package:frontend/pages/splash_screen.dart';
 import 'package:frontend/pages/theory.dart';

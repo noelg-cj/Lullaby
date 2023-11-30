@@ -85,7 +85,7 @@ class Home extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: 15),
             child: Text(
-              "Recommended",
+              "Pick up where you left off",
               style: Theme.of(context).textTheme.headlineMedium
             ),
           )
