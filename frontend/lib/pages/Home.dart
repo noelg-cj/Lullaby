@@ -73,7 +73,7 @@ class Home extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(left: 15),
                     child: Text(
-                      "How are you feeling?",
+                      "How are you feeling today?",
                       style: Theme.of(context).textTheme.bodyMedium
                     ),
                   ),
