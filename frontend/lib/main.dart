@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:frontend/pages/Home.dart';
+import 'package:frontend/Home.dart';
+import 'package:frontend/pages/Dashboard.dart';
+import 'package:frontend/pages/Life.dart';
 import 'package:frontend/pages/Splash_screen_two.dart';
-import 'package:frontend/pages/blog_page.dart';
+import 'package:frontend/components/blog_page.dart';
+import 'package:frontend/pages/Yoga.dart';
 import 'package:frontend/pages/splash_screen.dart';
-import 'package:frontend/pages/theory.dart';
+import 'package:frontend/pages/Theory.dart';
 import 'package:frontend/theme/theme.dart';
 
 void main() {
@@ -20,7 +23,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: lightTheme,
       debugShowCheckedModeBanner: false,
-      home: Home()
+      home: Home(),
     );
   }
 }
