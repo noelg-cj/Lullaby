@@ -38,7 +38,12 @@ class _HomeState extends State<Home> {
         bucket: bucket,
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () => {
+                  setState(() => {
+                    currentScreen = Yoga(),
+                    currentTab = 2
+                  })
+                },
         child: Image.asset('assets/images/lotus.png'),
 
         shape: CircleBorder(),
@@ -137,7 +142,7 @@ class _HomeState extends State<Home> {
                     child: Text(
                       "Yoga",
                       style: TextStyle(
-                        color: Theme.of(context).colorScheme.inversePrimary,
+                        color: currentTab == 2 ? Theme.of(context).primaryColor : Theme.of(context).colorScheme.inversePrimary,
                         fontFamily: 'Inter',
                         fontWeight: FontWeight.w600,
                         fontSize: 12
@@ -152,7 +157,7 @@ class _HomeState extends State<Home> {
                 onPressed: () => {
                   setState(() => {
                     currentScreen = Life(),
-                    currentTab = 2
+                    currentTab = 3
                   })
                 },
                 child: Column(
@@ -163,14 +168,14 @@ class _HomeState extends State<Home> {
                       height: 25,
                       width: 25,
                       colorFilter: ColorFilter.mode(
-                        currentTab == 2 ? Theme.of(context).primaryColor : Theme.of(context).colorScheme.inversePrimary,
+                        currentTab == 3 ? Theme.of(context).primaryColor : Theme.of(context).colorScheme.inversePrimary,
                         BlendMode.srcIn
                       ),
                     ),
                     Text(
                       'Life',
                       style: TextStyle(
-                        color: currentTab == 2 ? Theme.of(context).primaryColor : Theme.of(context).colorScheme.inversePrimary,
+                        color: currentTab == 3 ? Theme.of(context).primaryColor : Theme.of(context).colorScheme.inversePrimary,
                         fontFamily: 'Inter',
                         fontWeight: FontWeight.w600,
                         fontSize: 12
@@ -185,7 +190,7 @@ class _HomeState extends State<Home> {
                 onPressed: () => {
                   setState(() => {
                     currentScreen = Profile(),
-                    currentTab = 3
+                    currentTab = 4
                   })
                 },
                 child: Column(
@@ -196,14 +201,14 @@ class _HomeState extends State<Home> {
                       height: 25,
                       width: 25,
                       colorFilter: ColorFilter.mode(
-                        currentTab == 3 ? Theme.of(context).primaryColor : Theme.of(context).colorScheme.inversePrimary,
+                        currentTab == 4 ? Theme.of(context).primaryColor : Theme.of(context).colorScheme.inversePrimary,
                         BlendMode.srcIn
                       ),
                     ),
                     Text(
                       'Profile',
                       style: TextStyle(
-                        color: currentTab == 3 ? Theme.of(context).primaryColor : Theme.of(context).colorScheme.inversePrimary,
+                        color: currentTab == 4 ? Theme.of(context).primaryColor : Theme.of(context).colorScheme.inversePrimary,
                         fontFamily: 'Inter',
                         fontWeight: FontWeight.w600,
                         fontSize: 12

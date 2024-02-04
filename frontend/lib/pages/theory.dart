@@ -1,4 +1,6 @@
-import 'package:flutter/material.dart'; 
+import 'package:flutter/material.dart';
+
+import '../components/blog_button.dart'; 
 
 class Theory extends StatelessWidget {
   const Theory({super.key});
@@ -26,6 +28,37 @@ class Theory extends StatelessWidget {
                 color: Color(0xff534C7F)
               ),
             )
+          ],
+        ),
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            BlogButton(
+              title: "How yoga contributes to your happiness",
+              episodes: 5,
+              imageurl: "assets/images/smiley_pic.png"
+            ),
+            BlogButton(
+              title: "International Yoga day",
+              episodes: 5,
+              imageurl: "assets/images/sleep.png"
+            ),
+            BlogButton(
+              title: "Taking proper care of you",
+              episodes: 5,
+              imageurl: "assets/images/smile_lady.png"
+            ),
+            BlogButton(
+              title: "Your daily cup of Yoga",
+              episodes: 5,
+              imageurl: "assets/images/cup_yoga.png"
+            ),
+            BlogButton(
+              title: "Tasadana",
+              episodes: 5,
+              imageurl: "assets/images/tasadana.png"
+            ),
           ],
         ),
       ),
