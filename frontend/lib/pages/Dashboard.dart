@@ -91,19 +91,38 @@ class Dashboard extends StatelessWidget {
               padding: const EdgeInsets.only(left: 15),
               child: Text(
                 "Pick up where you left off",
-                style: Theme.of(context).textTheme.headlineMedium
+                style: TextStyle(
+                  fontFamily: "Inter",
+                  fontWeight: FontWeight.w500,
+                )
               ),
             ),
-            const SizedBox(height: 15),
+            const SizedBox(height: 10),
             const BlogButton(
               title: "How yoga contributes to your happiness",
               episodes: 3,
               imageurl: 'assets/images/smiley_pic.png'
             ),
+            Padding(
+              padding: const EdgeInsets.only(left: 15),
+              child: Text(
+                "Recommended",
+                style: TextStyle(
+                  fontFamily: "Inter",
+                  fontWeight: FontWeight.w500,
+                )
+              ),
+            ),
+            const SizedBox(height: 10),
             const BlogButton(
-              title: "How yoga contributes to your happiness",
+              title: "Tasadana",
               episodes: 3,
-              imageurl: 'assets/images/smiley_pic.png'
+              imageurl: 'assets/images/tasadana.png'
+            ),
+            const BlogButton(
+              title: "Your daily cup of Yoga",
+              episodes: 3,
+              imageurl: 'assets/images/cup_yoga.png'
             ),
           ],
         ),
