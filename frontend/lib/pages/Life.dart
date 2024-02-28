@@ -65,7 +65,7 @@ class Life extends StatelessWidget {
               imageurl: "assets/images/tasadana.png"
             ),
             BlogButton(
-              title: "",
+              title: "Tasadana",
               episodes: 5,
               imageurl: "assets/images/tasadana.png"
             ),
