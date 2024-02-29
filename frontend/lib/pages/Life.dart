@@ -50,7 +50,7 @@ class Life extends StatelessWidget {
               imageurl: "assets/images/sleep.png"
             ),
             BlogButton(
-              title: "How yoga contributes to your happiness",
+              title: "Tasadana 2",
               episodes: 5,
               imageurl: "assets/images/smiley_pic.png"
             ),
