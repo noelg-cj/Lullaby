@@ -60,7 +60,7 @@ class BlogWidget extends StatelessWidget {
                   ),
                   SizedBox(height: 15),
                   Text(
-                    "Taking better care of yourself is not a luxury; it's a necessity. In our fast-paced, often stressful lives, it's easy to put our well-being on the back burner. \n\nHowever, prioritizing self-care is essential for maintaining good physical and mental health.\n\nStart by carving out some time each day for activities that nourish your body and soul, whether it's through exercise, meditation, or indulging in a good book. Ensure you're getting enough sleep and eating a balanced diet. Don't forget to connect with loved ones and seek support when needed, as social connections can be a powerful source of comfort.Remember, self-care isn't selfish; it's a vital part of living a happy, healthy life.",
+                    "Taking better care of yourself is not a luxury; it's a necessity. In our fast-paced, often stressful lives, it's easy to put our well-being on the back burner. \n\nHowever, prioritizing self-care is essential for maintaining good physical and mental health.\n\nStart by carving out some time each day for activities that nourish your body and soul, whether it's through exercise, meditation, or indulging in a good book. Ensure you're getting enough sleep and eating a balanced diet. Don't forget to connect with loved ones and seek support when needed, as social connections can be a powerful source of comfort.Remember, self-care isn't selfish; it's a vital part of living a happy, healthy life. Lorem ipsum",
                     style: Theme.of(context).textTheme.bodyMedium
                   )
                 ],
